@@ -1,56 +1,74 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/output.css">
   <link rel="stylesheet" href="./Assets/styles/app.css">
   <link rel="stylesheet" href="./Assets/fonts/font.css">
-  <title>Document</title>
+  <title>اپل استور</title>
 </head>
-<body>
+<body class="bg-white dark:bg-gray-900">
   
-   <!-- PROMO BAR  -->
-    <a href="#"  aria-label="تخفیف ۷۰ درصدی لوازم جانبی آیفون" class="bg-primery h-[52px] md:h-14 lg:h-[70px] flex items-center justify-center hover:bg-[#f74600] hover:text-shadow-sm hover:text-shadow-[#6e6e6e3f]  transition-all duration-200">
-      <span class="text-white font-medium text-sm md:text-lg xl:text-2xl">
-        تا ۷۰٪ تخفیف برای  <span class="font-medium"> لوازم جانبی اورجینال آیفون</span>
-      </span>
-    </a>
+  <!-- PROMO BAR -->
+  <a href="#" aria-label="تخفیف ۷۰ درصدی لوازم جانبی آیفون" 
+     class="bg-primery h-[52px] md:h-14 lg:h-[70px] flex items-center justify-center hover:bg-[#f74600] hover:text-shadow-sm hover:text-shadow-[#6e6e6e3f] transition-all duration-200">
+    <span class="text-white font-medium text-sm md:text-lg xl:text-2xl">
+      تا ۷۰٪ تخفیف برای <span class="font-medium">لوازم جانبی اورجینال آیفون</span>
+    </span>
+  </a>
     
-  <!-- Header  -->
-  <header class=" shadow-[0_0_1906px_-5px_#0000001A]">
+  <!-- Header -->
+  <header class="shadow-md">
     <div class="container mx-auto px-8 pt-7 pb-4">
-      <!-- NAVBAR INFORMATION  -->
+      
+      <!-- NAVBAR INFORMATION -->
       <div class="flex items-center justify-between">
-        <!-- NAVBAR ICON  -->
-        <a href="#" alt="" class="inline-block w-4 h-3 relative ">
-          <span class="block w-full h-[1.5px] absolute top-0 bg-gray-900 dark:bg-white"></span>
-          <span class="block w-full h-[1.5px] absolute top-[50%] -translate-y-1/2 bg-gray-900 dark:bg-white"></span>
-          <span class="block w-full h-[1.5px] absolute bottom-0 bg-gray-900 dark:bg-white"></span>
-        </a>
-        <!-- SHOP ICON  -->
-        <div class="flex items-center gap-1">
-          <img class="w-8 h-8" src="./Assets/svg/app-store.svg" alt="">
-          <p class="w-10 leading-4 py-3 font-medium  text-base text-primery">اپل استور</p>
+        
+        <!-- NAVBAR ICON (Hamburger) -->
+        <button aria-label="باز کردن منو" class="inline-block w-6 h-5 relative">
+          <span class="block w-full h-[2px] absolute top-0 bg-gray-900 dark:bg-white"></span>
+          <span class="block w-full h-[2px] absolute top-1/2 -translate-y-1/2 bg-gray-900 dark:bg-white"></span>
+          <span class="block w-full h-[2px] absolute bottom-0 bg-gray-900 dark:bg-white"></span>
+        </button>
+        
+        <!-- SHOP ICON -->
+        <div class="flex items-center gap-2">
+          <img class="w-8 h-8" src="./Assets/svg/app-store.svg" alt="لوگو اپل استور">
+          <p class="font-medium text-base text-primery">اپل استور</p>
         </div>
-        <!-- Shopping cart  -->
+        
+        <!-- Shopping & Favorite Icons -->
         <div class="flex items-center gap-3">
-          <a href="#" alt="shoping card icon" class="relative">
-            <img src="./Assets/svg/shopping-cart.svg" alt="">
-            <span class="flex items-center justify-center absolute -top-1 -right-1.5 min-w-[12px] h-3 bg-primery rounded-full text-white text-[8px]">0</span>
+          
+          <!-- Shopping cart -->
+          <a href="#" aria-label="سبد خرید" class="relative">
+            <img src="./Assets/svg/shopping-cart.svg" alt="آیکون سبد خرید">
+            <span class="grid place-items-center absolute -top-1 -right-1.5 min-w-[16px] h-4 px-1 bg-primery rounded-full text-white text-[10px] leading-none">0</span>
           </a>
-          <a href="#" alt="favirote icon" class="relative">
-            <img src="./Assets/svg/heart.svg" alt="">
-            <span class="flex items-center justify-center absolute -top-1 -right-1.5 min-w-[12px] h-3 bg-primery rounded-full text-white text-[8px]">0</span>
+          
+          <!-- Favorite -->
+          <a href="#" aria-label="علاقه‌مندی‌ها" class="relative">
+            <img src="./Assets/svg/heart.svg" alt="آیکون علاقه‌مندی‌ها">
+            <span class="grid place-items-center absolute -top-1 -right-1.5 min-w-[16px] h-4 px-1 bg-primery rounded-full text-white text-[10px] leading-none">0</span>
           </a>
         </div>
       </div>
-      <!-- NAVBAR SEARCH  -->
-      <div class="search-bar w-full h-12 rounded-full flex items-center justify-end px-4">
-        <input type="search" name="" id="" placeholder="جستجو در اپل استور" class="w-full h-full bg-transparent outline-none text-gray-900 dark:text-white placeholder:text-gray-500 placeholder:text-xs caret-(--caret-primary)">
-        <a href=""><img src="./Assets/svg/search-normal.svg" alt=""></a>
+      
+      <!-- NAVBAR SEARCH -->
+      <div class="search-bar w-full h-12 rounded-full flex items-center justify-end px-4 mt-7 bg-gray-100 dark:bg-gray-800">
+        <input 
+          type="search" 
+          placeholder="جستجو در اپل استور" 
+          class="w-full h-full bg-transparent outline-none text-gray-900 dark:text-white placeholder:text-gray-400 placeholder:text-sm caret-primery"
+        >
+        <button aria-label="جستجو">
+          <img src="./Assets/svg/search-normal.svg" alt="آیکون جستجو">
+        </button>
       </div>
+      
     </div>
   </header>
+  
 </body>
 </html>
