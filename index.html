@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,20 +17,31 @@
     </a>
     
   <!-- Header  -->
-  <header class="h-36 shadow-[0_0_1906px_-5px_#0000001A]">
+  <header class=" shadow-[0_0_1906px_-5px_#0000001A]">
     <div class="container mx-auto px-8 pt-7 pb-4">
       <!-- NAVBAR INFORMATION  -->
-      <div>
+      <div class="flex items-center justify-between">
         <!-- NAVBAR ICON  -->
-        <a href="#" alt="" class=" w-4 h-3 relative flex justify-center items-center">
-          <span class="inline-block w-full bg-[#282828] border rounded-4xl after:absolute after:w-full after:h-0.5 after:bg-[#282828] after:rounded-b-4xl
-          after:left-0 after:right-0 after:-top-0 before:absolute before:w-full before:border before:rounded-b-4xl
-          before:left-0 before:right-0 before:bottom-0 "></span>
+        <a href="#" alt="" class="inline-block w-4 h-3 relative ">
+          <span class="block w-full h-[1.5px] absolute top-0 bg-gray-900 dark:bg-white"></span>
+          <span class="block w-full h-[1.5px] absolute top-[50%] -translate-y-1/2 bg-gray-900 dark:bg-white"></span>
+          <span class="block w-full h-[1.5px] absolute bottom-0 bg-gray-900 dark:bg-white"></span>
         </a>
         <!-- SHOP ICON  -->
-        <div>
-          <img src="./Assets/svg/app-store.svg" alt="">
-          <p class="font-bold text-base text-primery">اپل استور</p>
+        <div class="flex items-center gap-1">
+          <img class="w-8 h-8" src="./Assets/svg/app-store.svg" alt="">
+          <p class="w-10 leading-4 py-4 font-medium  text-base text-primery">اپل استور</p>
+        </div>
+        <!-- Shopping cart  -->
+        <div class="flex items-center gap-3">
+          <a href="#" alt="shoping card icon" class="relative">
+            <img src="./Assets/svg/shopping-cart.svg" alt="">
+            <span class="flex items-center justify-center absolute -top-1 -right-1.5 w-3 h-3 bg-primery rounded-full text-white text-[8px]">0</span>
+          </a>
+          <a href="#" alt="favirote icon" class="relative">
+            <img src="./Assets/svg/heart.svg" alt="">
+            <span class="flex items-center justify-center absolute -top-1 -right-1.5 w-3 h-3 bg-primery rounded-full text-white text-[8px]">0</span>
+          </a>
         </div>
       </div>
       <!-- NAVBAR SEARCH  -->
