@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./Assets/styles/app.css">
   <link rel="stylesheet" href="./Assets/fonts/font.css">
   <title>Document</title>
 </head>
 <body>
   
    <!-- PROMO BAR  -->
-    <a href="#" target="_blank" aria-label="تخفیف ۷۰ درصدی لوازم جانبی آیفون" class="bg-primery h-[52px] md:h-14 lg:h-[70px] flex items-center justify-center hover:bg-[#f74600] hover:text-shadow-sm hover:text-shadow-[#6e6e6e3f]  transition-all duration-200">
+    <a href="#"  aria-label="تخفیف ۷۰ درصدی لوازم جانبی آیفون" class="bg-primery h-[52px] md:h-14 lg:h-[70px] flex items-center justify-center hover:bg-[#f74600] hover:text-shadow-sm hover:text-shadow-[#6e6e6e3f]  transition-all duration-200">
       <span class="text-white font-medium text-sm md:text-lg xl:text-2xl">
         تا ۷۰٪ تخفیف برای  <span class="font-medium"> لوازم جانبی اورجینال آیفون</span>
       </span>
@@ -30,23 +31,24 @@
         <!-- SHOP ICON  -->
         <div class="flex items-center gap-1">
           <img class="w-8 h-8" src="./Assets/svg/app-store.svg" alt="">
-          <p class="w-10 leading-4 py-4 font-medium  text-base text-primery">اپل استور</p>
+          <p class="w-10 leading-4 py-3 font-medium  text-base text-primery">اپل استور</p>
         </div>
         <!-- Shopping cart  -->
         <div class="flex items-center gap-3">
           <a href="#" alt="shoping card icon" class="relative">
             <img src="./Assets/svg/shopping-cart.svg" alt="">
-            <span class="flex items-center justify-center absolute -top-1 -right-1.5 w-3 h-3 bg-primery rounded-full text-white text-[8px]">0</span>
+            <span class="flex items-center justify-center absolute -top-1 -right-1.5 min-w-[12px] h-3 bg-primery rounded-full text-white text-[8px]">0</span>
           </a>
           <a href="#" alt="favirote icon" class="relative">
             <img src="./Assets/svg/heart.svg" alt="">
-            <span class="flex items-center justify-center absolute -top-1 -right-1.5 w-3 h-3 bg-primery rounded-full text-white text-[8px]">0</span>
+            <span class="flex items-center justify-center absolute -top-1 -right-1.5 min-w-[12px] h-3 bg-primery rounded-full text-white text-[8px]">0</span>
           </a>
         </div>
       </div>
       <!-- NAVBAR SEARCH  -->
-      <div>
-
+      <div class="search-bar w-full h-12 rounded-full flex items-center justify-end px-4">
+        <input type="search" name="" id="" placeholder="جستجو در اپل استور" class="w-full h-full bg-transparent outline-none text-gray-900 dark:text-white placeholder:text-gray-500 placeholder:text-xs caret-(--caret-primary)">
+        <a href=""><img src="./Assets/svg/search-normal.svg" alt=""></a>
       </div>
     </div>
   </header>

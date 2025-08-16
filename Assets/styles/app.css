@@ -1,0 +1,8 @@
+:root {
+  --search-bg: #F1F1F1;
+  --caret-primary: #ff510c;
+}
+
+.search-bar {
+  background-color: var(--search-bg);
+}
