@@ -26,7 +26,7 @@
       <div class="flex items-center justify-between">
         
         <!-- NAVBAR ICON (Hamburger) -->
-        <button aria-label="باز کردن منو" class="inline-block w-6 h-5 relative">
+        <button aria-label="باز کردن منو" class="inline-block w-6 h-5 relative cursor-pointer md:hidden" type="button">
           <span class="block w-full h-[2px] absolute top-0 bg-gray-900 dark:bg-white"></span>
           <span class="block w-full h-[2px] absolute top-1/2 -translate-y-1/2 bg-gray-900 dark:bg-white"></span>
           <span class="block w-full h-[2px] absolute bottom-0 bg-gray-900 dark:bg-white"></span>
@@ -34,35 +34,49 @@
         
         <!-- SHOP ICON -->
         <div class="flex items-center gap-2">
-          <img class="w-8 h-8" src="./Assets/svg/app-store.svg" alt="لوگو اپل استور">
-          <p class="font-medium text-base text-primery">اپل استور</p>
+          <img class="w-14 h-14" src="./Assets/svg/app-store.svg" alt="لوگو اپل استور">
+          <p class="font-medium text-base md:text-3xl text-primery">اپل استور</p>
         </div>
         
+        <!-- NAVBAR SEARCH -->
+        <div class="search-bar2 max-w-2xs h-12 rounded-full hidden md:flex items-center justify-end px-4  dark:bg-gray-800 ">
+          <input 
+            type="search" 
+            placeholder="جستجو در اپل استور" 
+            class="w-full h-full bg-transparent outline-none text-gray-900 dark:text-white placeholder:text-gray-900 placeholder:text-sm caret-primery"
+          >
+          <!-- SEARCH ICON  -->
+          <button aria-label="جستجو" type="button" class="cursor-pointer">
+            <img src="./Assets/svg/search-normal.svg" alt="آیکون جستجو">
+          </button>
+        </div>
+
         <!-- Shopping & Favorite Icons -->
         <div class="flex items-center gap-3">
           
           <!-- Shopping cart -->
           <a href="#" aria-label="سبد خرید" class="relative">
-            <img src="./Assets/svg/shopping-cart.svg" alt="آیکون سبد خرید">
+            <img class="" src="./Assets/svg/shopping-cart.svg" alt="آیکون سبد خرید">
             <span class="grid place-items-center absolute -top-1 -right-1.5 min-w-[12px] h-3 px-1 bg-primery rounded-full text-white text-[10px]">0</span>
           </a>
           
           <!-- Favorite -->
           <a href="#" aria-label="علاقه‌مندی‌ها" class="relative">
-            <img src="./Assets/svg/heart.svg" alt="آیکون علاقه‌مندی‌ها">
-            <span class="grid place-items-center absolute -top-1 -right-1.5 min-w-[12px] h-3 px-1 bg-primery rounded-full text-white text-[10px]">0</span>
+            <img class="" src="./Assets/svg/heart.svg" alt="آیکون علاقه‌مندی‌ها">
+            <span class="grid place-items-center absolute -top-1 -right-1.5 min-w-[12px] h-3  px-1 bg-primery rounded-full text-white text-[10px]">0</span>
           </a>
         </div>
       </div>
       
       <!-- NAVBAR SEARCH -->
-      <div class="search-bar w-full h-12 rounded-full flex items-center justify-end px-4 mt-7 bg-gray-100 dark:bg-gray-800">
+      <div class="search-bar w-full h-12 rounded-full flex items-center justify-end px-4 mt-7 bg-gray-100 dark:bg-gray-800 md:hidden">
         <input 
           type="search" 
           placeholder="جستجو در اپل استور" 
           class="w-full h-full bg-transparent outline-none text-gray-900 dark:text-white placeholder:text-gray-400 placeholder:text-sm caret-primery"
         >
-        <button aria-label="جستجو">
+        <!-- SEARCH ICON  -->
+        <button aria-label="جستجو" type="button" class="cursor-pointer">
           <img src="./Assets/svg/search-normal.svg" alt="آیکون جستجو">
         </button>
       </div>
