@@ -208,6 +208,9 @@
   .-right-2 {
     right: calc(var(--spacing) * -2);
   }
+  .-right-3 {
+    right: calc(var(--spacing) * -3);
+  }
   .-right-6 {
     right: calc(var(--spacing) * -6);
   }
@@ -216,6 +219,9 @@
   }
   .-right-32 {
     right: calc(var(--spacing) * -32);
+  }
+  .-right-36 {
+    right: calc(var(--spacing) * -36);
   }
   .-right-72 {
     right: calc(var(--spacing) * -72);
@@ -418,6 +424,9 @@
   .fill-white {
     fill: var(--color-white);
   }
+  .stroke-current {
+    stroke: currentcolor;
+  }
   .stroke-white {
     stroke: var(--color-white);
   }
@@ -543,10 +552,39 @@
       color: var(--color-gray-900);
     }
   }
+  .hover\:border {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+      }
+    }
+  }
+  .hover\:border-primery {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-primery);
+      }
+    }
+  }
   .hover\:bg-\[\#f74600\] {
     &:hover {
       @media (hover: hover) {
         background-color: #f74600;
+      }
+    }
+  }
+  .hover\:bg-transparent {
+    &:hover {
+      @media (hover: hover) {
+        background-color: transparent;
+      }
+    }
+  }
+  .hover\:text-primery {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primery);
       }
     }
   }
