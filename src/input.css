@@ -5,7 +5,8 @@
   --font-sans: "Yekan", sans-serif;
 
   --color-primery: #ff510c;
-  --color-lightgray: #fafafa
+  --color-lightgray: #fafafa;
+  --color-middlegray: #747474;
 }
 
 .no-scrollbar::-webkit-scrollbar {
