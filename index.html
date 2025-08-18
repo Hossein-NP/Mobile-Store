@@ -235,7 +235,7 @@
       
       <!-- Apple Watch -->
       <a class="group  bg-lightgray md:bg-transparent w-[76px] h-[80px] rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="apple watch">
-        <svg class="w-[33px] h-[33px] md:w-11 md:h-11 group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-11 md:h-11  md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#apple-watch"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">اپل واچ</span>
@@ -243,7 +243,7 @@
 
       <!-- Airpod -->
       <a class="group bg-lightgray md:bg-transparent w-[76px] h-[80px] rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="airpod">
-        <svg class="w-[33px] h-[33px] md:w-11 md:h-11 group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-11 md:h-11  md:md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#airpod"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">ایر پاد</span>
@@ -251,7 +251,7 @@
 
       <!-- iPad -->
       <a class="group bg-lightgray md:bg-transparent w-[76px] h-[80px] rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="ipad">
-        <svg class="w-[33px] h-[33px] md:w-11 md:h-11 group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-11 md:h-11  md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#ipad"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">آیپد</span>
@@ -259,7 +259,7 @@
 
       <!-- iPhone -->
       <a class="group bg-lightgray md:bg-transparent w-[76px] h-[80px] rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="iphone">
-        <svg class="w-[33px] h-[33px] md:w-11 md:h-11 group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-11 md:h-11  md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#iphone"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">آیفون</span>
@@ -267,7 +267,7 @@
 
       <!-- MagSafe -->
       <a class="group bg-lightgray md:bg-transparent w-[76px] h-[80px] md:h-fit md:w-fit rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="magsafe">
-        <svg class="w-[33px] h-[33px] md:w-[44px] md:h-[44px] group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-[44px] md:h-[44px]  md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#magsafe"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">شارژر مگ سیف</span>
@@ -275,7 +275,7 @@
 
       <!-- HomePod -->
       <a class="group bg-lightgray md:bg-transparent w-[76px] h-[80px] rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="home pod">
-        <svg class="w-[33px] h-[33px] md:w-11 md:h-11 group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-11 md:h-11  md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#homepad"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">هوم پاد</span>
@@ -283,7 +283,7 @@
 
       <!-- Apple TV -->
       <a class="group bg-lightgray md:bg-transparent w-[76px] h-[80px] rounded-lg flex flex-col items-center justify-center gap-3 " href="#" aria-label="apple tv">
-        <svg class="w-[33px] h-[33px] md:w-11 md:h-11 group-hover:text-primery transition-all duration-200">
+        <svg class="w-[33px] h-[33px] md:w-11 md:h-11  md:group-hover:text-primery md:group-hover:rotate-3 transition-all duration-200">
           <use href="#appletv"></use>
         </svg>
         <span class="text-middlegray text-xs md:text-base font-medium">اپل تی وی</span>
@@ -292,5 +292,48 @@
     </div>
   </section>
 
+  <!-- CAROUSEL SECTION  -->
+  <section class="mt-8">
+    <div class="container mx-auto">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4 text-center">محصولات</h2>
+
+      <!-- Carousel Wrapper -->
+
+    </div>
+  </section>
+
+  <script>
+    const carousel = document.getElementById("carousel");
+    const slides = carousel.children.length;
+    const dots = document.querySelectorAll(".dot");
+    let index = 0;
+
+    function updateCarousel() {
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("opacity-100", i === index);
+        dot.classList.toggle("opacity-50", i !== index);
+      });
+    }
+
+    document.getElementById("next").addEventListener("click", () => {
+      index = (index + 1) % slides;
+      updateCarousel();
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      index = (index - 1 + slides) % slides;
+      updateCarousel();
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        index = i;
+        updateCarousel();
+      });
+    });
+
+    updateCarousel(); // initialize
+  </script>
 </body>
 </html>
