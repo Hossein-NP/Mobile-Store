@@ -1,10 +1,32 @@
 @import "tailwindcss";
+@layer components {
+    .btn-primary {
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      background-color: var(--color-primary);
+      padding-inline: --spacing(5);
+      padding-block: --spacing(2);
+      font-weight: var(--font-weight-medium);
+      color: var(--color-white);
+      box-shadow: var(--shadow-md);
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-primary-hover);
+        }
+      }
+    }
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-sans: "Yekan", sans-serif;
 
-  --color-primery: #ff510c;
+  --color-primary: #ff510c;
+  --color-primary-hover: #f74600;
   --color-lightgray: #fafafa;
   --color-middlegray: #747474;
 }
