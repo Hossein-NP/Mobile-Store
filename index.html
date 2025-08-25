@@ -312,86 +312,22 @@
         <!-- BTN  -->
         <div class="flex items-center justify-center "><a class="btn-primary" href="#">خرید کنید</a></div>
       </div>
-      <!-- Carousel Wrapper -->
-      <!-- Carousel root: focusable for keyboard nav -->
-        <div id="carousel" class="relative" tabindex="0" aria-roledescription="carousel">
-        <!-- Viewport -->
-        <div class="overflow-hidden rounded-2xl ring-1 ring-white/10 shadow-2xl">
-        <!-- Track -->
-          <div id="track" class="flex snap-x snap-mandatory overflow-x-auto no-scrollbar scroll-smooth">
-          <!-- Slide 1 -->
-          <figure class="relative w-full shrink-0 snap-center">
-          <img class="block w-full aspect-[16/9] object-cover" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1800&auto=format&fit=crop" alt="منظره کوهستانی و دریاچه" />
-          <figcaption class="pointer-events-none absolute inset-0 flex items-end justify-between p-4 md:p-6 bg-gradient-to-t from-black/60 via-black/0 to-transparent">
-          <div class="max-w-[75%]">
-          <p class="text-sm md:text-base font-medium">نمای کوهستان در گرگ‌ومیش</p>
-          <p class="text-xs md:text-sm text-white/70">اسلاید ۱ — کپشن نمونه برای نمایش توضیحات.</p>
+      <!-- Carousel root -->
+      <div id="carousel" class="mt-4" tabindex="0" role="slider" aria-roledescription="اسلایدر تصاویر"> <!-- fa lang -->
+          <!-- CAROUSEL VIEWPORT  -->
+          <div class="overflow-hidden rounded-[17px] ring-1 ring-primary/50 shadow-2xl">
+            <!-- TRACK  -->
+            <div class="flex snap-y scroll-smooth snap-mandatory no-scrollbar">
+              <!-- SLIDE 1  -->
+              <figure class="w-full flex-shrink0 snap-start">
+                <img class="block aspect-[16/9] object-cover" src="./Assets/images/banner-headphone.webp" alt="">
+                <figcaption>
+
+                </figcaption>
+              </figure>
+            </div>
           </div>
-          </figcaption>
-          </figure>
-
-
-          <!-- Slide 2 -->
-          <figure class="relative w-full shrink-0 snap-center">
-          <img class="block w-full aspect-[16/9] object-cover" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1800&auto=format&fit=crop" alt="دفتر کار مینیمال با لپ‌تاپ" />
-          <figcaption class="pointer-events-none absolute inset-0 flex items-end justify-between p-4 md:p-6 bg-gradient-to-t from-black/60 via-black/0 to-transparent">
-          <div class="max-w-[75%]">
-          <p class="text-sm md:text-base font-medium">دفتر کار مینیمال</p>
-          <p class="text-xs md:text-sm text-white/70">اسلاید ۲ — طراحی ساده و تمیز.</p>
-          </div>
-          </figcaption>
-          </figure>
-
-
-          <!-- Slide 3 -->
-          <figure class="relative w-full shrink-0 snap-center">
-          <img class="block w-full aspect-[16/9] object-cover" src="https://images.unsplash.com/photo-1520975922323-27b927b4e4f6?q=80&w=1800&auto=format&fit=crop" alt="شهر شبانه با نورها" />
-          <figcaption class="pointer-events-none absolute inset-0 flex items-end justify-between p-4 md:p-6 bg-gradient-to-t from-black/60 via-black/0 to-transparent">
-          <div class="max-w-[75%]">
-          <p class="text-sm md:text-base font-medium">شهر شبانه</p>
-          <p class="text-xs md:text-sm text-white/70">اسلاید ۳ — نورها و کنتراست جذاب.</p>
-          </div>
-          </figcaption>
-          </figure>
-
-
-          <!-- Slide 4 -->
-          <figure class="relative w-full shrink-0 snap-center">
-          <img class="block w-full aspect-[16/9] object-cover" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1800&auto=format&fit=crop" alt="جنگل مه‌آلود" />
-          <figcaption class="pointer-events-none absolute inset-0 flex items-end justify-between p-4 md:p-6 bg-gradient-to-t from-black/60 via-black/0 to-transparent">
-          <div class="max-w-[75%]">
-          <p class="text-sm md:text-base font-medium">جنگل مه‌آلود</p>
-          <p class="text-xs md:text-sm text-white/70">اسلاید ۴ — حس رازآلود و آرام.</p>
-          </div>
-          </figcaption>
-          </figure>
-          </div>
-        </div>
-
-
-        <!-- Prev / Next buttons -->
-        <button type="button" data-dir="prev" class="group absolute right-2 top-1/2 -translate-y-1/2 grid place-items-center w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 backdrop-blur ring-1 ring-white/20 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60" aria-label="اسلاید قبلی">
-        <!-- Right arrow (since RTL, previous is on the right) -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-        <path fill-rule="evenodd" d="M15.78 5.22a.75.75 0 0 1 0 1.06L10.06 12l5.72 5.72a.75.75 0 1 1-1.06 1.06l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-        </svg>
-        </button>
-        <button type="button" data-dir="next" class="group absolute left-2 top-1/2 -translate-y-1/2 grid place-items-center w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 backdrop-blur ring-1 ring-white/20 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60" aria-label="اسلاید بعدی">
-        <!-- Left arrow (since RTL, next is on the left) -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-        <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 1 1-1.06-1.06L13.94 12 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-        </svg>
-        </button>
-
-
-        <!-- Indicators (dots) + counter -->
-        <div class="mt-3 md:mt-4 flex items-center justify-between">
-        <div class="text-xs md:text-sm text-white/70" data-counter>۱ / ۴</div>
-        <div role="tablist" aria-label="اسلایدها" class="flex items-center gap-2">
-        <button role="tab" aria-selected="true" aria-label="اسلاید ۱" data-slide-to="0" class="h-2.5 w-2.5 rounded-full bg-white transition-opacity opacity-100"></button>
-        <button role="tab" aria-selected="false" aria-label="اسلاید ۲" data-slide-to="1" class="h-2.5 w-2.5 rounded-full bg-white transition-opacity opacity-40"></button>
-        <button role="tab" aria-selected="false" aria-label="اسلاید ۳" data-slide-to="2" class="h-2.5 w-2.5 rounded-full bg-white transition-opacity opacity-40"></button>
-        </ul>  
+      </div>  
     </div>
   </section>
 

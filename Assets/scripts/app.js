@@ -9,7 +9,7 @@
 
         let index = 0;
         let timer = null;
-        const AUTOPLAY_MS = 5000; // تغییر دهید اگر لازم است
+        const AUTOPLAY_MS = 3000; // تغییر دهید اگر لازم است
 
         const rtl = document.documentElement.getAttribute('dir') === 'rtl';
 
